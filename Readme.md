@@ -28,5 +28,32 @@ Dataset: [Telco Customer Churn - Kaggle](https://www.kaggle.com/datasets/blastch
 
 ### Clone the repository
 ```bash
-git clone https://github.com/shmahma/telco_churn_prediction
-cd telco_churn_prediction
+git clone https://github.com/shmahma/CHURN
+cd CHURN
+```
+
+### Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+
+## Usage
+
+### 1️ Train the Model
+```bash
+python src/train.py
+```
+- Trains multiple models
+- Saves pipelines
+
+### 2️ Predict with Test Data
+```bash
+python src/evaluate.py 
+```
+- Produces predictions and generate confusion matrix fo each model
+  
+![streamlit](images/LOG_REG.png)
+![streamlit](images/Rand_Forest.png)
+
+
