@@ -1,9 +1,9 @@
 # Telco Customer Churn Prediction
 
 ## Overview
-This project predicts whether a customer will churn (resign from a telecom service) using machine learning. Multiple classification models are trained and compared, and the trained models are saved for evaluation.  
+This project predicts whether a customer will churn (resign from a telecom service) using machine learning. Two classification models are trained and compared, and the trained models are saved for evaluation.  
 
-Dataset: [Telco Customer Churn - Kaggle](https://www.kaggle.com/datasets/blastchar/telco-customer-churn)
+Dataset: https://www.kaggle.com/datasets/blastchar/telco-customer-churn
 
 
 ---
@@ -55,5 +55,26 @@ python src/evaluate.py
   
 ![streamlit](images/LOG_REG.png)
 ![streamlit](images/Rand_Forest.png)
+
+
+- 1️// Logistic Regression
+
+Accuracy : 0.8070
+
+F1-score : 0.6069
+
+ROC-AUC : 0.8422
+
+- 2️// Random Forest
+
+Accuracy : 0.7899
+
+F1-score : 0.5621
+
+ROC-AUC : 0.8259
+
+
+- Logistic Regression outperforms across all key metrics, particularly in identifying the minority class (churners).
+
 
 
